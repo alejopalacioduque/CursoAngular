@@ -22,6 +22,19 @@ body, input[text], button {
     display: none;
 }
 
+.pelicula-title{
+    cursor: pointer;
+}
+.pelicula-title:hover{
+    text-decoration: underline;
+}
+
+.clicked{
+    font-size: 20px;
+    color: green;
+    font-family: Arial;
+}
+
 /*
  * See https://github.com/angular/angular.io/blob/master/public/docs/_examples/styles.css
  * for the full set of master styles used by the documentation samples

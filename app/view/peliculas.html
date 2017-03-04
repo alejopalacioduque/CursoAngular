@@ -1,9 +1,10 @@
 <h1>{{titulo}}</h1>
-<p>Lista de peliculas:</p>
-<button (click)="onShowHide(true)" [class.showingData]="mostrarDatos === true">Mostrar Datos</button>
-<button (click)="onShowHide(false)" [class.showingData]="mostrarDatos === false">Ocultar Datos</button>
-<ul *ngIf="mostrarDatos === true">
-    <li>Titulo : <strong>{{pelicula.getTitulo()}}</strong></li>
-    <li>Director: <strong>{{pelicula.getDirector()}}</strong></li>
-    <li>Anio: <strong>{{pelicula.getAnio()}}</strong></li>
-</ul>
+<nav>
+    <ul>
+        <li><a [routerLink] = "['Peliculas']">Inicio</a> </li>
+        <li><a [routerLink] = "['CrearPelicula']">Añadir Pelicula</a> </li>
+        <li><a [routerLink] = "['Contacto']">Contacto</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
+<pelculas-footer></pelculas-footer>
